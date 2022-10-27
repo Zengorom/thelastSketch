@@ -39,21 +39,7 @@ function blob(size, xCenter, yCenter, k, t, noisiness) {
 	let angleStep = 360 / 500;
   for (let theta = 0; theta < 360; theta += angleStep) {
     let r1, r2;
-		/*
-    if (theta < PI / 2) {
-      r1 = cos(theta);
-      r2 = 1;
-    } else if (theta < PI) {
-      r1 = 0;
-      r2 = sin(theta);
-    } else if (theta < 3 * PI / 2) {
-      r1 = sin(theta);
-      r2 = 0;
-    } else {
-r1 = 1;
-      r2 = cos(theta);
-    }
-		*/
+    
 		r1 = cos(theta)+1;
 		r2 = sin(theta)+1;
     let r = size + noise(k * r1,  k * r2, t) * noisiness;
