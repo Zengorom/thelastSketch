@@ -1,6 +1,6 @@
 let kMax;
 let step;
-let n = 40; // number of blobs
+let n = 15; // number of blobs
 let radius = 1; // diameter of the circle
 let inter = 2; // difference between the sizes of two blobs
 let maxNoise = 500;
