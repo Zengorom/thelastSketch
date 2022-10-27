@@ -9,7 +9,7 @@ let noiseProg = (x) => (x);
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  colorMode(HSB, 1);
+  colorMode(HSB, 255);
 	angleMode(DEGREES);
   noFill();
 	//noLoop();
