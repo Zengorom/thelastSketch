@@ -25,7 +25,7 @@ function draw() {
   
   for (let i = 0; i < n; i++) {
 		let alpha = 1 - noiseProg(i / n);
-		stroke(1);
+		stroke(135 + i / n * 80, 200, 255);
 		strokeWeight(noise(t + i/n)*2 + 1);
 		let size = radius + i * inter;
 		let k = kMax * sqrt(i/n);
@@ -39,7 +39,7 @@ function blob(size, xCenter, yCenter, k, t, noisiness) {
 	let angleStep = 360 / 500;
   for (let theta = 0; theta < 360; theta += angleStep) {
     let r1, r2;
-    
+
 		r1 = cos(theta)+1;
 		r2 = sin(theta)+1;
     let r = size + noise(k * r1,  k * r2, t) * noisiness;
