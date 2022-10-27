@@ -16,6 +16,7 @@ function setup() {
 	kMax = 1;
 	step = 0.01;
 	strokeWeight(2);
+    background(10);
 }
 
 function draw() {
