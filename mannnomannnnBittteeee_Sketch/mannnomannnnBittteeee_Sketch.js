@@ -43,7 +43,7 @@ function blob(size, xCenter, yCenter, k, t, noisiness) {
 
 		r1 = cos(theta)+1;
 		r2 = sin(theta)+1;
-    let r = size + noise(k * r1,  k * r2, t) * noisiness;
+    let r = size + noise(k * 170,  k * r2, t) * noisiness;
     let x = xCenter + r * cos(theta);
     let y = yCenter + r * sin(theta);
     curveVertex(x, y);
