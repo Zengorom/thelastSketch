@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  
 	let t = frameCount/100;
 	kMax = noise(t/2);
   
